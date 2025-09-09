@@ -1,0 +1,88 @@
+:
+
+🔹 1. Lists
+
+Definition: An ordered, mutable (changeable) collection of items.
+
+Syntax:
+my_list = [1, 2, 3, 4, 5]
+
+
+Key Features:
+Allows duplicates
+Indexed (0-based indexing)
+Elements can be changed (mutable)
+
+Examples:
+nums = [10, 20, 30]
+nums.append(40)       # Add element → [10, 20, 30, 40]
+nums.remove(20)       # Remove element → [10, 30, 40]
+nums[1] = 99          # Modify element → [10, 99, 40]
+print(nums[0])        # Access → 10
+
+🔹 2. Tuples
+
+Definition: An ordered, immutable (unchangeable) collection of items.
+
+Syntax:
+my_tuple = (1, 2, 3)
+
+Key Features:
+Indexed like lists
+Cannot be changed after creation
+Faster than lists
+
+Examples:
+point = (10, 20, 30)
+print(point[1])       # Access → 20
+# point[1] = 50  ❌ Error (immutable)
+
+
+✅ Use tuples for fixed data (like coordinates, constants).
+
+🔹 3. Sets
+
+Definition: An unordered, mutable collection of unique elements.
+
+Syntax:
+my_set = {1, 2, 3, 4}
+
+Key Features:
+No duplicates allowed
+Unordered (no indexing)
+Useful for set operations (union, intersection, difference)
+
+Examples:
+a = {1, 2, 3}
+b = {3, 4, 5}
+print(a.union(b))        # {1, 2, 3, 4, 5}
+print(a.intersection(b)) # {3}
+print(a - b)             # {1, 2}
+
+🔹 4. Dictionaries
+
+Definition: An unordered, mutable collection of key–value pairs.
+
+Syntax:
+my_dict = {"name": "Sahil", "age": 21}
+
+Key Features:
+Keys must be unique & immutable (string, number, tuple)
+Values can be anything
+Fast lookup using keys
+
+Examples:
+student = {"name": "Sahil", "age": 21, "course": "Python"}
+print(student["name"])     # Access → Sahil
+student["age"] = 22        # Modify
+student["grade"] = "A"     # Add new key
+del student["course"]      # Delete key
+print(student.keys())      # dict_keys(['name', 'age', 'grade'])
+
+📌 Quick Comparison Table
+Feature	      List	       Tuple	  Set	  Dictionary
+Ordered	     ✅ Yes	    ✅ Yes	 ❌ No	 ❌ (Python 3.7+: keeps insertion order)
+Mutable	     ✅ Yes	    ❌ No	 ✅ Yes	 ✅ Yes
+Duplicates	 ✅ Yes	    ✅ Yes	 ❌ No	 Keys ❌, Values ✅
+Indexing	 ✅ Yes	    ✅ Yes	 ❌ No	 By key (not index)
+Example	     [1,2,3]	  (1,2,3)	{1,2,3}	  {"a":1,"b":2}
