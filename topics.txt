@@ -1,6 +1,4 @@
-:
-
-🔹 1. Lists
+c🔹 1. Lists
 
 Definition: An ordered, mutable (changeable) collection of items.
 
@@ -15,7 +13,7 @@ Elements can be changed (mutable)
 
 Examples:
 nums = [10, 20, 30]
-nums.append(40)       # Add element → [10, 20, 30, 40]
+nums.append(40)       # Add element → [10, 20, 30, 40] 
 nums.remove(20)       # Remove element → [10, 30, 40]
 nums[1] = 99          # Modify element → [10, 99, 40]
 print(nums[0])        # Access → 10
